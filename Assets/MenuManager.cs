@@ -21,6 +21,11 @@ public class MenuManager : MonoBehaviour
         Starting_screen.SetActive(true);   // Show Main Menu
     }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene("World");
+    }
+
     // Function to quit the game
     public void ExitGame()
     {
