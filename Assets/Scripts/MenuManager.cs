@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviour
 
     public void LoadWorld()
     {
-        SceneManager.LoadScene("World");
+        SceneManager.LoadScene("InWorld");
         
     }
 

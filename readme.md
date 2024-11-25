@@ -15,7 +15,7 @@ UI:
 
 Scēnas:
 - [ ] Sataisit spēles laukumu
-	- [ ] Uztaisīt sākuma daļu
+	- [x] Uztaisīt sākuma daļu
 	- [ ] Uztaisīt atkārtojošos fragmentus
 	- [ ] Uztaisīt finiša daļas (kur tiek piegādāts)
 - [ ] \(neobligāts) Sākuma scēna kā fons sākuma ekrānam
