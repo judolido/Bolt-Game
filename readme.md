@@ -21,7 +21,7 @@ Scēnas:
 - [ ] \(neobligāts) Sākuma scēna kā fons sākuma ekrānam
 
 Modeļi:
-- [ ] Galvenais varonis (Vai kopā ar transportu)
+- [x] Galvenais varonis (Vai kopā ar transportu)
 - [ ] Transports
 - [ ] Izstradat spēles mehānikas kustības (pievienot tam animācijas- var neta atrast)
 
@@ -31,7 +31,7 @@ Mehānikas:
 - [ ] Pakāpeniski paaugstināt grūtību (ātrāk kustas vai vēl kā)
 - [ ] speles beigās izveidot nelielu UI logu, kur parāda iegūtos punktus utt
 
-### Ja paliek laiks⏳ (nav obligati)
+### Ja paliek laiks⏳ (nav obligāti)
 - [ ] kad sakas game uztaisit camera scene kur iznak kaut kads policists vai kas cits kas vinu itka kertu
 - [ ] Skaņas efekti (palecoties, kustoties, u.t.t.)
 - [ ] ka radas realtime score kamer skrien
