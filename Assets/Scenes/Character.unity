@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3314e1f539578944abbe4f4cc7c3de37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1191188284}
 --- !u!1 &672530626 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c430aa9aee403f64096fb32d33d3c5d3, type: 3}
@@ -291,6 +292,8 @@ MonoBehaviour:
   speed: 10
   jumpForce: 30
   rb: {fileID: 1191188280}
+  horizontalInput: 0
+  verticalInput: 0
 --- !u!54 &1191188280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -418,6 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3314e1f539578944abbe4f4cc7c3de37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!95 &1191188286
 Animator:
   serializedVersion: 5
