@@ -1,47 +1,57 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Security.Cryptography;
-using System.Threading;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public float speed = 5;
-    public float jumpForce = 10;
+    public float speed = 5f;
+    public float jumpForce = 10f;
     public Rigidbody rb;
 
-    float horizontalInput;
-    float verticalInput;
+    public GameObject streetPrefab; // Reference to the prefab to spawn
+    public float spawnInterval = 60f; // Distance the player must travel before spawning a new prefab
 
+    private float totalDistanceTraveled = 0f; // Tracks the total distance traveled by the player
+    private Vector3 lastPlayerPosition; // Tracks the last position of the player
 
+    private void Start()
+    {
+        // Initialize lastPlayerPosition to the player's starting position
+        lastPlayerPosition = transform.position;
 
-
-
-
-
-    private void FixedUpdate () {
-
-        Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
-        Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime;
-        // Vector3 verticalMove = transform.up * speed * Time.fixedDeltaTime * verticalInput;
-        
-        rb.MovePosition(rb.position +  forwardMove + horizontalMove);
-        
+        // Optionally, spawn an initial prefab at the player's start
+        SpawnStreet();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + forwardMove);
 
-        // Check for jump input
-        if (Input.GetButtonDown("Jump"))
+        // Calculate the distance traveled since the last frame
+        float distanceThisFrame = Vector3.Distance(transform.position, lastPlayerPosition);
+        totalDistanceTraveled += distanceThisFrame;
+
+        // Update the last player position
+        lastPlayerPosition = transform.position;
+
+        // Check if it's time to spawn a new prefab
+        if (totalDistanceTraveled >= spawnInterval)
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            SpawnStreet();
+            totalDistanceTraveled -= spawnInterval; // Reset the traveled distance counter
         }
     }
 
-
+    private void SpawnStreet()
+    {
+        if (streetPrefab != null)
+        {
+            // Spawn the prefab directly in front of the player along the Z-axis
+            Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z + spawnInterval);
+            Instantiate(streetPrefab, spawnPosition, Quaternion.identity);
+        }
+        else
+        {
+            Debug.LogError("Street prefab is not assigned in the inspector!");
+        }
+    }
 }
