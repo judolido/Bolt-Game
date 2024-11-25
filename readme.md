@@ -1,4 +1,4 @@
-## TODO list
+﻿## TODO list
 UI:
 - [ ] Main screen
 	- [ ] Iestatījumi
