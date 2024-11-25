@@ -23,7 +23,8 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("World");
+     
+  //      SceneManager.LoadScene("InWorld");
     }
 
     // Function to quit the game
