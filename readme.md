@@ -18,7 +18,7 @@ Scēnas:
 	- [x] Uztaisīt sākuma daļu
 	- [ ] Uztaisīt atkārtojošos fragmentus
 	- [ ] Uztaisīt finiša daļas (kur tiek piegādāts)
-- [ ] \(neobligāts) Sākuma scēna kā fons sākuma ekrānam
+- [x] \(neobligāts) Sākuma scēna kā fons sākuma ekrānam
 
 Modeļi:
 - [x] Galvenais varonis (Vai kopā ar transportu)
@@ -26,7 +26,7 @@ Modeļi:
 - [ ] Izstradat spēles mehānikas kustības (pievienot tam animācijas- var neta atrast)
 
 Mehānikas:
-- [ ] Collisions ar objektiem
+- [x] Collisions ar objektiem
 - [ ] Punktu sistēma (vai atkarīga tikai no ilguma vai vēl kā)
 - [ ] Pakāpeniski paaugstināt grūtību (ātrāk kustas vai vēl kā)
 - [ ] speles beigās izveidot nelielu UI logu, kur parāda iegūtos punktus utt
