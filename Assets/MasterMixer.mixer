@@ -32,6 +32,10 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: bc20f65e6c6ed534db194fc0e2443629
     name: MasterVolume
+  - guid: d04b045bddc6a5a47ab7896e49dd77ab
+    name: MusicVolume
+  - guid: eac6928a36539e04fa05f41bff423daa
+    name: SFXVolume
   m_AudioMixerGroupViews:
   - guids:
     - 74d98ebde19a0194eb1bed3f14f0a075
@@ -85,6 +89,8 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 6e7ba4e7b0feb144494d1135440a8c41
   m_FloatValues:
+    eac6928a36539e04fa05f41bff423daa: 0
+    d04b045bddc6a5a47ab7896e49dd77ab: 0
     bc20f65e6c6ed534db194fc0e2443629: 0
   m_TransitionOverrides: {}
 --- !u!244 &5986461535488413720

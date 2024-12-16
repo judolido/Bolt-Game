@@ -1,22 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuManager : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 
     public void LoadWorld()
     {
-        SceneManager.LoadScene("World");
+        SceneManager.LoadSceneAsync("World");
         
     }
 
+    public void LoadNextScene()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    
     // Function to quit the game
     public void ExitGame()
     {

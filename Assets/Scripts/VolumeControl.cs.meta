@@ -4,9 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - MasterMixer: {fileID: 24100000, guid: a5c393f10d0e24643ad2688fd5f77c60, type: 2}
-  - VolumeSlider: {instanceID: 0}
-  - VolumeButton: {instanceID: 0}
+  - masterMixer: {fileID: 24100000, guid: a5c393f10d0e24643ad2688fd5f77c60, type: 2}
+  - volumeSlider: {instanceID: 0}
+  - volumeButton: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
