@@ -685,6 +685,9 @@ PrefabInstance:
       addedObject: {fileID: 1986577535634006629}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 413835b07a75d2e478354ef212d8c7a5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 8024252612167145794}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 413835b07a75d2e478354ef212d8c7a5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 6850589692880753602}
     - targetCorrespondingSourceObject: {fileID: 3267151512053241269, guid: 413835b07a75d2e478354ef212d8c7a5, type: 3}
       insertIndex: -1
@@ -1698,7 +1701,43 @@ MonoBehaviour:
         m_CallState: 2
   onFinish:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4378958826253661259}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8024252612167145794}
+        m_TargetAssemblyTypeName: SetAnimatorVariables, Assembly-CSharp
+        m_MethodName: SetRunning
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8024252612167145794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529081312034174350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c25f103f612661f4fa794d6883c1f823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &6850589692880753602
 Animator:
   serializedVersion: 7

@@ -16,14 +16,17 @@ public class PlayerState : MonoBehaviour
         
     }
     
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle"))
         {
             onDeath.Invoke();
         }
+    }
 
-        if (collision.gameObject.CompareTag("Finish"))
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Finish"))
         {
             onFinish.Invoke();
         }
