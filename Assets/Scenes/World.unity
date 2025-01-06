@@ -384,11 +384,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTile: {fileID: 2864314464019653115, guid: 5bc929526dfa60140ba5ac43feffaca6, type: 3}
   middleTiles:
-  - {fileID: 4543266025078471046, guid: 5aa6eb5171711de4691cda6c14deb6d8, type: 3}
-  - {fileID: 4543266025078471046, guid: 5b0cd2194e305e44c823e37331672f12, type: 3}
   - {fileID: 2864314464019653115, guid: 5cbe0e3d630943d44b17fe74d526596a, type: 3}
-  middleTileAmount: 5
-  defaultTileLength: 100
+  - {fileID: 4995036390211366120, guid: 274ffca473736d9428306c6f56d8aa50, type: 3}
+  - {fileID: 2864314464019653115, guid: b1187fe8152ae7147bdbb67da4c21c89, type: 3}
+  - {fileID: 3225745602186290421, guid: 3e9fae72b92eabb47969b66fcb6c25e3, type: 3}
+  middleTileAmount: 10
+  defaultTileLength: 150
 --- !u!1 &808720584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1403,10 @@ PrefabInstance:
     - target: {fileID: 3955029097525565593, guid: b716c515eadc6844e88aeb0e5264fb05, type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 4378958826253661259, guid: b716c515eadc6844e88aeb0e5264fb05, type: 3}
+      propertyPath: speed
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
